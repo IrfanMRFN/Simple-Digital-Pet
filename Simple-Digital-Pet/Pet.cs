@@ -2,6 +2,10 @@ namespace Simple_Digital_Pet;
 
 public class Pet
 {
+    // Fields
+    private const int _maxStat = 10;
+    private const int _minStat = 0;
+
     // Properties
     public string Name { get; private set; }
     public int Hunger { get; private set; }
@@ -18,102 +22,65 @@ public class Pet
     }
 
     // Methods
-    public void Feed()
+    public string Feed()
     {
-        if (Hunger <= 0)
+        if (Hunger <= _minStat)
         {
-            Console.WriteLine($"{Name} is not hungry!");
-            return;
+            return $"{Name} is not hungry!";
         }
 
-        Hunger -= 3;
-        if (Hunger < 0)
-            Hunger = 0;
+        Hunger = Math.Clamp(Hunger - 3, _minStat, _maxStat);
+        Energy = Math.Clamp(Energy + 2, _minStat, _maxStat);
+        Happiness = Math.Clamp(Happiness + 1, _minStat, _maxStat);
 
-        Energy += 2;
-        if (Energy > 10)
-            Energy = 10;
-
-        Happiness += 1;
-        if (Happiness > 10)
-            Happiness = 10;
-
-        Console.WriteLine($"{Name} has been fed.");
+        return $"{Name} has been fed.";
     }
 
-    public void Play()
+    public string Play()
     {
-        if (Energy <= 0)
+        if (Energy <= _minStat)
         {
-            Console.WriteLine($"{Name} is too tired to play!");
-            return;
+            return $"{Name} is too tired to play!";
         }
 
-        if (Hunger >= 10)
+        if (Hunger >= _maxStat)
         {
-            Console.WriteLine($"{Name} is too hungry to play!");
-            return;
+            return $"{Name} is too hungry to play!";
         }
 
-        Happiness += 3;
-        if (Happiness > 10)
-            Happiness = 10;
+        Happiness = Math.Clamp(Happiness + 3, _minStat, _maxStat);
+        Energy = Math.Clamp(Energy - 2, _minStat, _maxStat);
+        Hunger = Math.Clamp(Hunger + 1, _minStat, _maxStat);
 
-        Energy -= 2;
-        if (Energy < 0)
-            Energy = 0;
-
-        Hunger += 1;
-        if (Hunger > 10)
-            Hunger = 10;
-
-        Console.WriteLine($"{Name} played happily!");
+        return $"{Name} played happily!";
     }
 
-    public void Sleep()
+    public string Sleep()
     {
-        if (Energy >= 10)
+        if (Energy >= _maxStat)
         {
-            Console.WriteLine($"{Name} is not tired!");
-            return;
+            return $"{Name} is not tired!";
         }
 
         Energy = 10;
+        Hunger = Math.Clamp(Hunger + 1, _minStat, _maxStat);
+        Happiness = Math.Clamp(Happiness - 2, _minStat, _maxStat);
 
-        Hunger += 1;
-        if (Hunger > 10)
-            Hunger = 10;
-
-        Happiness -= 2;
-        if (Happiness < 0)
-            Happiness = 0;
-
-        Console.WriteLine($"{Name} has slept and is full of energy!");
+        return $"{Name} has slept and is full of energy!";
     }
 
-    public void DoNothing()
+    public string DoNothing()
     {
-        Hunger += 1;
-        if (Hunger > 10)
-            Hunger = 10;
+        Hunger = Math.Clamp(Hunger + 1, _minStat, _maxStat);
+        Energy = Math.Clamp(Energy - 1, _minStat, _maxStat);
+        Happiness = Math.Clamp(Happiness - 1, _minStat, _maxStat);
 
-        Energy -= 1;
-        if (Energy < 0)
-            Energy = 0;
-
-        Happiness -= 1;
-        if (Happiness < 0)
-            Happiness = 0;
-
-        Console.WriteLine($"{Name} did nothing and feels a bit worse.");
+        return $"{Name} did nothing and feels a bit worse.";
     }
 
-    public void DisplayStatus()
+    public override string ToString()
     {
-        Console.WriteLine($"{Name}'s Status:");
-        Console.WriteLine($"Hunger: {Hunger}/10");
-        Console.WriteLine($"Happiness: {Happiness}/10");
-        Console.WriteLine($"Energy: {Energy}/10");
+        return $"{Name}'s Status:\n Hunger: {Hunger}/10\n Happiness: {Happiness}/10\n Energy: {Energy}/10";
     }
 
     public bool IsAlive()

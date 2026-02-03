@@ -40,19 +40,19 @@ public class Program
             switch (choice)
             {
                 case "1":
-                    myPet.Feed();
+                    Console.WriteLine(myPet.Feed());
                     break;
                 case "2":
-                    myPet.Play();
+                    Console.WriteLine(myPet.Play());
                     break;
                 case "3":
-                    myPet.Sleep();
+                    Console.WriteLine(myPet.Sleep());
                     break;
                 case "4":
-                    myPet.DoNothing();
+                    Console.WriteLine(myPet.DoNothing());
                     break;
                 case "5":
-                    myPet.DisplayStatus();
+                    Console.WriteLine(myPet.ToString());
                     break;
                 case "6":
                     exit = true;
