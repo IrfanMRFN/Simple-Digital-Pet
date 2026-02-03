@@ -1,0 +1,15 @@
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\bin\Debug\net10.0\Simple-Digital-Pet.exe
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\bin\Debug\net10.0\Simple-Digital-Pet.deps.json
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\bin\Debug\net10.0\Simple-Digital-Pet.runtimeconfig.json
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\bin\Debug\net10.0\Simple-Digital-Pet.dll
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\bin\Debug\net10.0\Simple-Digital-Pet.pdb
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\obj\Debug\net10.0\Simple-Digital-Pet.GeneratedMSBuildEditorConfig.editorconfig
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\obj\Debug\net10.0\Simple-Digital-Pet.AssemblyInfoInputs.cache
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\obj\Debug\net10.0\Simple-Digital-Pet.AssemblyInfo.cs
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\obj\Debug\net10.0\Simple-Digital-Pet.csproj.CoreCompileInputs.cache
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\obj\Debug\net10.0\Simple-Digital-Pet.sourcelink.json
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\obj\Debug\net10.0\Simple-Digital-Pet.dll
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\obj\Debug\net10.0\refint\Simple-Digital-Pet.dll
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\obj\Debug\net10.0\Simple-Digital-Pet.pdb
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\obj\Debug\net10.0\Simple-Digital-Pet.genruntimeconfig.cache
+F:\C# Projects\Simple Digital Pet Game\Simple-Digital-Pet\Simple-Digital-Pet\obj\Debug\net10.0\ref\Simple-Digital-Pet.dll
